@@ -87,6 +87,7 @@ public class Detective {
 		int num = Integer.parseInt(numStr);
 
 		//ここに記述する
+		if()
 
 	}
 
