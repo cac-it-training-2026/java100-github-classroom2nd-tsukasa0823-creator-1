@@ -66,12 +66,28 @@ public class WarehouseManager {
 
 	public static void main(String[] args) {
 
+		int[] c = new int[5];
+		int[] d = new int[5];
+		int[] e = new int[5];
 
-		//ここに必要な配列の宣言を記述する。
-
+		int[][] abc = new int[3][5];
 
 		//ここに配列に値を代入する処理を記述する。(要素はランダム)
+		for (int i = 0; i < abc.length; i++) {
+			for (int j = 0; j < abc[i].length; j++) {
 
+				int rand = (int) (Math.random() * 4);
+				if (rand == 0) {
+					abc[i][j] = 0;
+				} else {
+					abc[i][j] = (int) (Math.random() * 10 + 1);
+
+					;
+				}
+
+			}
+
+		}
 
 		System.out.println("E主任：");
 		System.out.println("MQ運送の件、お願いします。\n");
@@ -81,48 +97,64 @@ public class WarehouseManager {
 
 		System.out.print("C...");
 
-
 		//ここに配列Cの要素をすべて出力する処理を記述する。
+		for (int i = 0; i < c.length; i++) {
 
+			c[i] = abc[0][i];
+			System.out.print(c[i]);
+			if (i < c.length - 1) {
+				System.out.print(",");
+			}
+		}
 
 		System.out.print("\n\nD...");
 
-
 		//ここに配列Dの要素をすべて出力する処理を記述する。
+		for (int i = 0; i < d.length; i++) {
 
+			d[i] = abc[1][i];
+			System.out.print(d[i]);
+			if (i < c.length - 1) {
+				System.out.print(",");
+			}
+		}
 
 		System.out.print("\n\nE...");
 
-
 		//ここに配列Eの要素をすべて出力する処理を記述する。
+		for (int i = 0; i < e.length; i++) {
 
+			e[i] = abc[2][i];
+			System.out.print(e[i]);
+			if (i < c.length - 1) {
+				System.out.print(",");
+			}
+		}
 
 		System.out.println("\n\nでした。直してきます...\n");
 
-
 		//ここに詰め替え処理を記述する
+		for (int i = 0; i < c.length; i++) {
+			if (c[i] == 0) {
 
+			}
+
+		}
 
 		System.out.println("Yさん：");
 		System.out.println("直してきました。\n");
 
 		System.out.print("C...");
 
-
 		//ここに配列Cの要素をすべて出力する処理を記述する。
-
 
 		System.out.print("\n\nD...");
 
-
 		//ここに配列Dの要素をすべて出力する処理を記述する。
-
 
 		System.out.print("\n\nE...");
 
-
 		//ここに配列Eの要素をすべて出力する処理を記述する。
-
 
 		System.out.println("\n\nになりました。\n");
 
